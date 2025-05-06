@@ -109,7 +109,7 @@ nav a:hover {
 
 /* Footer */
 footer {
-    margin-top: 10px;
+    margin-top: 5px;
     text-align: center;
     font-size: 14px;
     color: #2c051b;
@@ -126,7 +126,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #d69090cb;
-    background-image: url("images")
+    background-image: url("images/");
 }
 #products {
     margin-top: 60px;
