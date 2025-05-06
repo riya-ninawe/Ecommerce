@@ -7,11 +7,22 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* html{
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/_\ \(8\).jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+} */
 
 /* Body basic styles */
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #FFF5F7; /* Soft white pink */
+    max-height: fit-content;
+    /* background-image: url("../images/_\ \(10\).jpeg");
+    background-position: center;
+    background-repeat: no-repeat; */
+    background-color: #f2d2d8f3; /* Soft white pink */
     color: #555; /* Dark grey text */
     line-height: 1.6;
     padding: 20px;
@@ -22,14 +33,14 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #FADADD; /* Light Pink */
+    background-color: #b4666d8a; /* Light Pink */
     padding: 20px;
     border-radius: 12px;
 }
 
 header h1 {
     font-size: 28px;
-    color: #EFB7C4; /* Dusty Pink */
+    color: #37020e; /* Dusty Pink */
 }
 
 nav a {
@@ -49,18 +60,18 @@ nav a:hover {
     text-align: center;
     margin: 40px 0;
     padding: 40px;
-    background-color: #FADADD;
+    background-color: #fadaddb3;
     border-radius: 12px;
 }
 
 #banner h2 {
     font-size: 36px;
-    color: #EFB7C4;
+    color: #68344091;
 }
 
 #banner p {
     font-size: 18px;
-    margin-top: 10px;
+    margin-top: 250px;
 }
 
 /* Categories Section */
@@ -98,10 +109,10 @@ nav a:hover {
 
 /* Footer */
 footer {
-    margin-top: 60px;
+    margin-top: 10px;
     text-align: center;
     font-size: 14px;
-    color: #aaa;
+    color: #2c051b;
 }
 
 
@@ -109,6 +120,14 @@ footer {
 
 /* product css */
 /* Products Page */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #d69090cb;
+    background-image: url("images")
+}
 #products {
     margin-top: 60px;
     text-align: center;
@@ -193,3 +212,22 @@ footer {
     scroll-behavior: smooth;
   }
   
+
+  #notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #d3b4b4;
+    color: #912d2d;
+    padding: 12px 20px;
+    border-radius: 8px;
+    opacity: 0;
+    transition: opacity 0.5s, transform 0.5s;
+    transform: translateY(-20px);
+    z-index: 1000;
+}
+
+#notification.show {
+    opacity: 1;
+    transform: translateY(0);
+}
