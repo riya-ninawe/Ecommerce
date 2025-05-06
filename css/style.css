@@ -1,0 +1,195 @@
+/* Import cute modern font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body basic styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #FFF5F7; /* Soft white pink */
+    color: #555; /* Dark grey text */
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FADADD; /* Light Pink */
+    padding: 20px;
+    border-radius: 12px;
+}
+
+header h1 {
+    font-size: 28px;
+    color: #EFB7C4; /* Dusty Pink */
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #EFB7C4; /* Soft pink hover */
+}
+
+/* Banner */
+#banner {
+    text-align: center;
+    margin: 40px 0;
+    padding: 40px;
+    background-color: #FADADD;
+    border-radius: 12px;
+}
+
+#banner h2 {
+    font-size: 36px;
+    color: #EFB7C4;
+}
+
+#banner p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Categories Section */
+#categories {
+    margin-top: 60px;
+    text-align: center;
+}
+
+#categories h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.category-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.category-card {
+    background-color: #ffffff;
+    padding: 20px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    background-color: #FFE0E9;
+}
+
+/* Footer */
+footer {
+    margin-top: 60px;
+    text-align: center;
+    font-size: 14px;
+    color: #aaa;
+}
+
+
+
+
+/* product css */
+/* Products Page */
+#products {
+    margin-top: 60px;
+    text-align: center;
+}
+
+#products h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.product-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.product-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    width: 250px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    color: #EFB7C4;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.product-card p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 12px;
+}
+
+.product-card button {
+    background-color: #EFB7C4;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product-card button:hover {
+    background-color: #FADADD;
+}
+
+
+/* Smooth Image Hover Zoom */
+.product-card img {
+    transition: transform 0.3s ease;
+  }
+  
+  .product-card:hover img {
+    transform: scale(1.05);
+  }
+  
+  /* Soft Box Shadow on Hover */
+  .product-card {
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .product-card:hover {
+    box-shadow: 0 8px 16px rgba(255, 182, 193, 0.4);
+  }
+  
+  /* Smooth Scroll for whole page */
+  html {
+    scroll-behavior: smooth;
+  }
+  
